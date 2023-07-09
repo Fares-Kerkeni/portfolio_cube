@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  //border: solid 1px rgb(255, 255, 255);
+  .navigation {
+    .button_nav {
+      margin: 0 10px;
+    }
+  }
+}

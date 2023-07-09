@@ -1,0 +1,64 @@
+.container {
+  width: 100%;
+  height: calc(100% - 69.61px);
+
+  .select {
+    width: 100%;
+    height: 69.61px;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    font-size: 50px;
+  }
+  .container_projects {
+    width: 100%;
+    height: calc(100% - 69.61px);
+    display: flex;
+
+    .project_title {
+      height: 100%;
+      width: 50%;
+
+      .contenu {
+        font-weight: bold;
+
+        height: 100px;
+        border: solid 1px rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .numero {
+          padding-left: 25px;
+        }
+        .title {
+          font-size: 50px;
+        }
+        .fleche {
+          border: solid 1px rgb(255, 255, 255);
+          padding: 15px;
+          display: none;
+        }
+        &:hover .fleche {
+          display: block;
+        }
+      }
+    }
+    .project_img {
+      height: 100%;
+      width: 50%;
+      border: solid 1px rgb(255, 255, 255);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .img {
+        width: 90%;
+        height: 90%;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.container {
+  overflow: none;
+
+  .fullPageSlide {
+    height: 100vh;
+    // Utiliser calc pour soustraire la hauteur de la navigation de 100vh
+    width: 100%;
+  }
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}

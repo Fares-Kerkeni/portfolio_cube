@@ -1,0 +1,69 @@
+.container {
+  width: 100%;
+  height: 100%;
+
+  .fullPageSlide {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    .container_home {
+      width: 100%;
+      height: calc(100% - 69.61px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .container_me {
+        //border: solid 1px rgb(96, 186, 43);
+        width: 50%;
+        .cube_and_text {
+          display: flex;
+          //border: solid 1px rgb(45, 43, 186);
+          .container_me_text {
+            //border: solid 1px rgb(186, 43, 43);
+            width: 50%;
+            .title {
+              font-size: 50px;
+              font-weight: bold;
+              margin-bottom: 20px;
+            }
+            .contenu {
+              font-size: 20px;
+
+              margin-bottom: 20px;
+            }
+            .reseaux {
+              //border: solid 1px rgb(169, 43, 186);
+              margin-bottom: 20px;
+              .lien {
+                margin-right: 10px;
+                img {
+                  width: 30px;
+                  height: 30px;
+                }
+              }
+            }
+          }
+          .container_me_cube {
+            //border: solid 1px rgb(169, 43, 186);
+            width: 50%;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+          }
+        }
+        .container_me_tech_stack {
+          //border: solid 1px rgb(169, 43, 186);
+          display: flex;
+          align-items: center;
+          .title {
+            margin-right: 25px;
+          }
+          img {
+            width: 30px;
+            height: 30px;
+            margin: 10px;
+          }
+        }
+      }
+    }
+  }
+}
