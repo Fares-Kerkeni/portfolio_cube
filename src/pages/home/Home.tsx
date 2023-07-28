@@ -32,6 +32,7 @@ function Home() {
           effect={"cube"}
           direction="vertical"
           className={style.container}
+          speed={900}
         >
           <SwiperSlide className={style.fullPageSlide}>
             <Nav />
@@ -46,13 +47,13 @@ function Home() {
                     </div>
                     <div className={style.reseaux}>
                       <a
-                        href="https://www.linkedin.com/in/alexandre-roux-1b1b1b1b1/"
+                        href="https://www.linkedin.com/in/fares-kerkeni-%F0%9F%9A%80-futur-d%C3%A9veloper-front-react-2718271b7/"
                         className={style.lien}
                       >
                         <img src={linkedin} alt="linkedin" />
                       </a>
                       <a
-                        href="https://www.linkedin.com/in/alexandre-roux-1b1b1b1b1/"
+                        href="https://github.com/Fares-Kerkeni?tab=repositories"
                         className={style.lien}
                       >
                         <img src={github} alt="github" />

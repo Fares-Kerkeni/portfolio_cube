@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide, SwiperClass } from "swiper/react";
-import { Scrollbar, A11y, EffectCube } from "swiper/modules";
+import { Scrollbar, A11y, EffectCube, Mousewheel } from "swiper/modules";
 import About from "./pages/about/About";
 import Home from "./pages/home/Home";
 import Works from "./pages/works/Works";
@@ -19,18 +19,16 @@ const App: React.FC = () => {
     <div className={style.container}>
       <SwiperContext.Provider value={{ swiper, setSwiper }}>
         <Swiper
-          mousewheel={{
-            sensitivity: 0.5,
-          }}
           simulateTouch={false}
           onSwiper={setSwiper}
-          modules={[Scrollbar, A11y, EffectCube]}
+          modules={[Scrollbar, A11y, EffectCube, Mousewheel]}
           spaceBetween={50}
           slidesPerView={1}
           scrollbar={{ draggable: true }}
           onSlideChange={() => console.log("slide change")}
           effect={"cube"}
           className={style.fullPageSlide}
+          speed={900}
           cubeEffect={{
             shadow: true,
             slideShadows: true,

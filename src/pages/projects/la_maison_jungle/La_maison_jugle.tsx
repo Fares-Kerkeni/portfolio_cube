@@ -1,37 +1,15 @@
-import { Swiper, SwiperSlide } from "swiper/react";
 import style from "./la_maison_jugle.module.scss";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import "swiper/css/effect-cube";
-import Nav from "../../../components/nav/Nav";
-import { Scrollbar, A11y, EffectCube, Mousewheel } from "swiper/modules";
+
+import Template from "../template_project/Template";
 
 function La_maison_jugle() {
   return (
     <>
-      <Swiper
-        modules={[Scrollbar, A11y, EffectCube, Mousewheel]}
-        spaceBetween={50}
-        slidesPerView={3}
-        pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-        effect={"cube"}
-        direction="vertical"
-        className={style.container}
-      >
-        <SwiperSlide className={style.fullPageSlide}>
-          {" "}
-          <Nav />
-          La_maison_jugle
-        </SwiperSlide>
-        <SwiperSlide className={style.fullPageSlide}>
-          La_maison_jugle
-        </SwiperSlide>
-      </Swiper>
+      <Template
+        titre="LA MAISON JUNGLE"
+        description="Le projet que j'ai réalisé est une application de commande de plantes. Les utilisateurs peuvent parcourir une sélection de plantes, les ajouter à leur panier virtuel, et passer commande en contactant le vendeur. L'application offre une expérience conviviale et simplifiée, permettant aux amateurs de plantes de choisir et d'acheter facilement leurs plantes préférées. Bien qu'elle ne dispose pas de fonctionnalités de paiement intégrées, l'application facilite le processus de commande en fournissant un récapitulatif des plantes sélectionnées et des instructions pour finaliser la transaction. En résumé, cette application permet aux utilisateurs de commander des plantes de manière pratique et simplifiée, favorisant ainsi leur passion pour le jardinage et la création d'espaces verts."
+        lien="https://la-maison-jungle-mu.vercel.app/"
+      />
     </>
   );
 }
