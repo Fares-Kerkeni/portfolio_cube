@@ -1,5 +1,5 @@
 // Switch_project.tsx
-import React from "react";
+
 import style from "./Switch_project.module.scss";
 import { usePageContext } from "../../../PageContext";
 import All_contries from "../all_contries/All_contries";

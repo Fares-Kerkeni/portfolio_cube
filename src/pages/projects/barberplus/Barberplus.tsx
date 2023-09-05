@@ -1,12 +1,9 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import style from "./barber.module.scss";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/effect-cube";
-import Nav from "../../../components/nav/Nav";
-import { Scrollbar, A11y, EffectCube, Mousewheel } from "swiper/modules";
+
 import Template from "../template_project/Template";
 
 function Barberplus() {

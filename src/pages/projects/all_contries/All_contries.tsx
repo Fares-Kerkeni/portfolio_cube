@@ -1,4 +1,4 @@
-import style from "./all_contries.module.scss";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";

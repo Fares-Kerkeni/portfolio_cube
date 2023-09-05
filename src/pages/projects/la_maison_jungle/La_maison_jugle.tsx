@@ -1,5 +1,3 @@
-import style from "./la_maison_jugle.module.scss";
-
 import Template from "../template_project/Template";
 
 function La_maison_jugle() {
